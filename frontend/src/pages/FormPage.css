@@ -1,0 +1,98 @@
+.form-page { max-width: 720px; }
+
+.voltar {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-bottom: 1.2rem;
+  color: #e63946;
+  font-weight: 700;
+  font-size: 0.88rem;
+  transition: opacity 0.2s;
+}
+.voltar:hover { opacity: 0.75; }
+
+.form-page h1 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #0d1b2a;
+  margin-bottom: 1.6rem;
+}
+
+.form {
+  background: #fff;
+  padding: 2.2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.form-row .campo { flex: 1; min-width: 150px; }
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.campo label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #495057;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.campo input,
+.campo textarea {
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  padding: 0.6rem 0.9rem;
+  font-size: 0.95rem;
+  font-family: inherit;
+  background: #f8f9fa;
+  transition: border-color 0.2s, background 0.2s;
+  outline: none;
+  color: #1c1c2e;
+}
+.campo input:focus,
+.campo textarea:focus {
+  border-color: #1a2f4a;
+  background: #fff;
+}
+
+.campo input::placeholder,
+.campo textarea::placeholder { color: #adb5bd; }
+
+.img-preview {
+  margin-top: 0.7rem;
+  width: 100%;
+  max-width: 340px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #e9ecef;
+}
+
+.erro {
+  font-size: 0.78rem;
+  color: #c1121f;
+  font-weight: 600;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.8rem;
+  margin-top: 0.6rem;
+  padding-top: 1rem;
+  border-top: 1px solid #f0f2f5;
+}

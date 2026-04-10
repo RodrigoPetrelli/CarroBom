@@ -1,0 +1,86 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ── Header ── */
+.header {
+  background: linear-gradient(135deg, #0d1b2a 0%, #1a2f4a 100%);
+  padding: 0 2.5rem;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.35);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #fff;
+}
+.logo span {
+  color: #e63946;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  color: #8eacc0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+.nav-link:hover { color: #fff; }
+
+.btn-novo {
+  background: #e63946;
+  color: #fff;
+  padding: 0.5rem 1.3rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.88rem;
+  letter-spacing: 0.3px;
+  transition: background 0.2s, transform 0.1s;
+  box-shadow: 0 2px 8px rgba(230,57,70,0.4);
+}
+.btn-novo:hover  { background: #c1121f; transform: translateY(-1px); }
+.btn-novo:active { transform: translateY(0); }
+
+/* ── Main ── */
+.main {
+  flex: 1;
+  padding: 2.5rem 2rem;
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ── Botões genéricos ── */
+.btn {
+  display: inline-block;
+  padding: 0.42rem 1rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  border: none;
+  transition: opacity 0.18s, transform 0.1s;
+  letter-spacing: 0.2px;
+}
+.btn:hover  { opacity: 0.85; transform: translateY(-1px); }
+.btn:active { transform: translateY(0); }
+
+.btn-ver      { background: #1a2f4a; color: #fff; }
+.btn-editar   { background: #e9a020; color: #fff; }
+.btn-deletar  { background: #c1121f; color: #fff; }
+.btn-cancelar { background: #6c757d; color: #fff; }
+.btn-salvar   { background: #1a2f4a; color: #fff; padding: 0.55rem 1.8rem; font-size: 0.95rem; }
